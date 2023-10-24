@@ -1,0 +1,4 @@
+server/debug
+server/target
+
+**/*.rs.bk

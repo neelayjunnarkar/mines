@@ -1,0 +1,20 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+authors = ["Neelay Junnarkar"]
+description = "Server for a multiplayer mines implementation."
+homepage = "http://mines.neelay.net"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.28.2", features = ["full"] }
+tokio-tungstenite = "*"
+futures-util = "0.3"
+rand = "0.8.5"
+itertools = "0.10.5"
+names = { version = "0.14.0", default-features = false }
+arr_macro = "0.2.1"
+clap = { version = "4.3.19", features = ["derive"] }
+http = "0.2.9"
